@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from pontuei.models import Sala, Jogador
+
+admin.site.register(Sala)
+admin.site.register(Jogador)
