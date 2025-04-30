@@ -1,6 +1,6 @@
 from django_filters import FilterSet
 
-from pontuei.models import Jogador, Sala
+from pontuei.models import Jogador, Sala, HistoricoPontuacao
 
 
 class JogadorFilter(FilterSet):
@@ -15,4 +15,11 @@ class SalaFilter(FilterSet):
         model = Sala
         fields = {
             'codigo': ['exact'],
+        }
+
+class HistoricoPontuacaoFilter(FilterSet):
+    class Meta:
+        model = HistoricoPontuacao
+        fields = {
+            'jogador': ['exact'],
         }
