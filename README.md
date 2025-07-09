@@ -23,7 +23,7 @@ Tecnologias:
 Para rodar o projeto é necessário ter o python instalado, clonar o projeto, criar uma venv e rodar:
 
 ```bash
-pip install django djangorestframework django-filter
+pip install -r requirements.txt
 ```
 ```bash
 python manage.py migrate
